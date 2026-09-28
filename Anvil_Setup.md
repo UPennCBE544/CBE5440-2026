@@ -24,6 +24,14 @@ Download and install:
 
 Launch Xming. You will always need to have this open in order to forward graphical windows from the external clusters.
 
+### Setting Up Bashrc:
+After logging in, please run these commands in your home directory
+cp /home/x-shan4/.bashrc ./
+source .bashrc
+
+### Things you can do on your local environment
+You can install these on your local environment if you want to try things out locally without using the cluster.
+
 ### Installing Anaconda:
 1. Go to this link: https://www.anaconda.com/download/success#downloads
 2. Download the installer
@@ -42,8 +50,4 @@ In terminal: pip install notebook
 In terminal: jupyter notebook
 
 <a name='logging'></a>
- 
-### Setting Up Bashrc:
-After logging in, please run these commands in your home directory
-cp /home/x-shan4/.bashrc ./
-source .bashrc
+
