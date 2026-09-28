@@ -5,10 +5,8 @@ permalink: /Python/
 ---
 
 # Getting Started
-1. [Logging Into the Computing Clusters](../Clusters/)
-2. [Basic UNIX](../UNIX/)
-3. [Python](../Python/)
-
+1. [Basic UNIX](/UNIX/)
+2. [Python](/Python/)
 ____
 
 ## Python Tutorial
