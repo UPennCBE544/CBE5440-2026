@@ -3,10 +3,6 @@ layout: page
 mathjax: false
 permalink: /Python/
 ---
-
-# Getting Started
-1. [Basic UNIX](/UNIX/)
-2. [Python](/Python/)
 ____
 
 ## Python Tutorial
