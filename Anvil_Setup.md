@@ -10,7 +10,40 @@ General login information: [https://www.rcac.purdue.edu/knowledge/anvil/access/l
 
 Start by generating an [SSH key](https://docs.rcac.purdue.edu/userguides/anvil/getting-started/#ssh) by following the steps provided.
 
-### Setting up environment
-Modify ~/.bashrc - Sanguk will share a template with you
+## Installations
+### Installing a display server:
+#### Mac OSX
+Download and install:
 
+* [XQuartz](http://www.xquartz.org/)
 
+#### Windows
+
+Download and install:
+* [Xming](http://sourceforge.net/projects/xming/) (Note: disable automatic installation of PuTTY with Xming. The above installer is a newer version)
+
+Launch Xming. You will always need to have this open in order to forward graphical windows from the external clusters.
+
+### Installing Anaconda:
+1. Go to this link: https://www.anaconda.com/download/success#downloads
+2. Download the installer
+3. Open the pkg and install
+
+### Installing ASE:
+In terminal: conda install conda-forge::ase
+
+In terminal: conda install tk
+
+Confirm ASE works by typing ase gui
+
+### Installing JupyterNotebook:
+In terminal: pip install notebook
+
+In terminal: jupyter notebook
+
+<a name='logging'></a>
+ 
+### Setting Up Bashrc:
+After logging in, please run these commands in your home directory
+cp /home/x-shan4/.bashrc ./
+source .bashrc
