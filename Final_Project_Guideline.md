@@ -130,7 +130,7 @@ Individual Task
    ```bash
    bader density.cube  
    ```
-  Which will generate the ACF.DAT file from density.cube file. You can read the ACF.DAT file to see how much electrons are assigned to each atoms based on the bader space. Run the bader charge analysis for the adsorbate as well, and you can compare how the total molecule & individual atoms have gained or lost electrons during the adsorption process.
+   Which will generate the ACF.DAT file from density.cube file. You can read the ACF.DAT file to see how much electrons are assigned to each atoms based on the bader space. Run the bader charge analysis for the adsorbate as well, and you can compare how the total molecule & individual atoms have gained or lost electrons during the adsorption process.
    
 5. Electron Distribution Plot.
 
