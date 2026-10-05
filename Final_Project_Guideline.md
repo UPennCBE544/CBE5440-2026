@@ -61,28 +61,32 @@ Goal: The main scientific goal is to find an analytic model for functionalized M
 
 ## Plan ##
 
-For each sites in the basal plane, we need to go through the following path.
+For the overall process, we need to go through the following path.
 
-<img width="968" src="docs/figure1.png">
+<img width="968" src="docs/overall-process.png">
 
 <a name='ind'></a>
 ### Detailed plan for Individual tasks ###
 
-We will break into groups of 3-4 students and each group will be assigned a series of surfaces they will be responsible for.
+We will break into groups of 3-4 students and each group will be assigned a series of MXenes and functional groups.
    
-       a. Cycloalkane - Group 1
+       a. Functional group : H<sub>3</sub>PO<sub>4</sub>, PH<sub>3</sub>, HCHO, NO, NO<sub>2</sub>, N<sub>2</sub>O
+          Metal : Ti, V, Zr, Nb - Group1
 
-       b. Cycloalkene - Group 2 
+       b. Functional group : H<sub>3</sub>PO<sub>4</sub>, PH<sub>3</sub>, HCHO, NO, NO<sub>2</sub>, N<sub>2</sub>O
+          Metal : Mo, Hf, Ta, W - Group2
 
-       c. Amine - Group 3
+       c. Functional group : SO<sub>3</sub>, SO<sub>2</sub>, HCN, CO<sub>2</sub>, CO, H<sub>2</sub>S
+          Metal : Ti, V, Zr, Nb - Group3
 
-       d. Carboxylic Acid - Group 4
+       d. Functional group : SO<sub>3</sub>, SO<sub>2</sub>, HCN, CO<sub>2</sub>, CO, H<sub>2</sub>S
+          Metal : Mo, Hf, Ta, W - Group4
 
        Groups: 
-         (1) Lily, Jiachun, Yoky, Zhanyuan
-         (2) Anika, Brigid, Shellyn, Zaini 
-         (3) Bo, Eric, Yerim
-         (4) Erin, Haomin, Khue
+         (1) -
+         (2) -
+         (3) -
+         (4) -
 
 Individual Task
 1. Download the packages containing the adsorbates and necessary base structure(Relaxed Nb<sub>2</sub>C MXene, and Nb<sub>2</sub>CCl MXene)/files.
@@ -92,39 +96,25 @@ Individual Task
     ```
    Depending on your group please download one of the following files:
    ```bash
-    wget https://upenncbe544.github.io/CBE544-2025/fp_amine.tar.gz
-    wget https://upenncbe544.github.io/CBE544-2025/fp_cycloalkane.tar.gz
-    wget https://upenncbe544.github.io/CBE544-2025/fp_cycloalkene.tar.gz
-    wget https://upenncbe544.github.io/CBE544-2025/fp_carboxylic_acid.tar.gz
+    wget https://upenncbe544.github.io/files/CBE544-2026/Group1.tar.gz
+    wget https://upenncbe544.github.io/files/CBE544-2026/Group2.tar.gz
+    wget https://upenncbe544.github.io/files/CBE544-2026/Group3.tar.gz
+    wget https://upenncbe544.github.io/files/CBE544-2026/Group4.tar.gz
     tar -xzvf (filename).tar.gz
     ```
-    Distribute the ligands among team members, each member should have 2 ligands. After downloading the ligands, remove one hydrogen from them, for cycloalkane hydrogen from any carbon, for cycloalkene, a hydrogen from carbon that contains a double bond, for carboxylic acid, remove from the -COOH to create -COO, and lastly for amine, remove from -NH<sub>2</sub> to create -NH, or amido radical.
+    Distribute the ligands among team members, each member should have - ligands and - metals.
    
-3. Adsorb and relax the structure on the 'bare' surface in 2 configuration where either it is tilted or standing up in two directions.(You don't need to run calculations for single layer adsorption, please only relax the double layer adsorption) 
-    a. Adsorb the first ligands straight and tilted using the adsorbate.py.
+3. Adsorb the functional group and relax the structure.
+    a. Adsorb the first ligands straight and tilted using the given script, adsorbate.py. Please keep how you adsorb the adsorbate consistent.
     Ex)
-    <img width="968" src="docs/image2.png">
-      Step 1. Adsorb the ligand standing straight up. 
+    <img width="968" src="docs/ref-image.png">
+      How to Adsorb the functional group 
       ```bash
       ads = io.read('pathway/to/adsorbate/scf.out')
       ```
-      Change the default pathway to the pathway for your ligand. You can find the pathway to the ligand by using pwd command in the directory where it contains the scf.out file of ligand.
-      Choose the index of the atoms in the ligand so that you get a straight chain. Then you need to choose the index atoms from the scf.out file of the bare system to designated sites. For fcc, you need to pick a metal atom from the bottom layer, and 2 adjacent metal atoms in the same layer. For hcp you need to pick a carbon atom and the 2 adjacent carbon atoms in the same layer. For tope site, you use the same settings as the fcc just on the top layer of metal. And for the position of adsorbate, input: fcc, hcp or top. The default setting should be the adsorbate standing straight up.
-      Step 2. Adsorb the ligand tilted.
-      Everything should be the same as the Step1, but you need to modify the angles in the code:
-      ```bash
-      if index4 == 'fcc' or index4 == 'top' or index4 == 'hcp':
-      ads.rotate(90,v,reference_position_ads)
-      if cpos[index_ads1][2] > cpos[index_ads2][2]:
-          ads.rotate(180,v,reference_position_ads) <- Modify here
-      else:
-          ads.rotate(180,v,reference_position_ads)
-      elif index4 == 'fcc-' or index4 == 'top-' or index4 == 'hcp-':
-        ads.rotate(90, v, reference_position_ads) <- Modify here
-      ```
-      Try different angles(0, 30, 60) to have the ligand lying as close as possible to the surface without it colliding with the periodic counterpart. Make sure to record the angle you   have changed to.
-   b. Adsorb the second ligands straight in the bottom layer in the same way. Instead of fcc, hcp, and top, utilze fcc-, hcp-, top-. You also need to pick the indexes of the surface atoms opposite for fcc and top, but same for hcp. However, you need to input fcc-, hcp- and top- for the positions. Keep in mind that you will need to change the file that you are reading to "init.traj" in the adsorbate.py, so that you are adsorbing to the newly generated file with the one adsorbate already adsorbed.
-   c. Calculate the adsorption energies of each configuration to figure out the most optimal structure. The analysis from here on will be only done in the most optimal structure.
+      Change the default pathway to the pathway for your functional group. You can find the pathway to the functional group by using pwd command in the directory where it contains the scf.out file of functional group.
+      Choose the index of the atoms in the functional group so that you get a straight chain. Then you need to choose the index atoms from the scf.out file of the bare system to designated sites. For fcc site, you need to pick a metal atom from the bottom layer, and 2 adjacent metal atoms in the same layer. 
+   b. Calculate the adsorption energies of each configuration to see how stable the functional group is.
 
 4. Run a DOS calculation on the relaxed structures, same as you did for homework 5.
       
@@ -154,7 +144,11 @@ Individual Task
 
    e. Download the density.cube files from each components(total system, adsorbate, MXene, termination) your local machine using scp command:
       ```bash
-   scp x-you_id@anvil.rcac.purdue.edu:/path/to/the/density.cube /path/to/your/local/machine 
+   scp x-your_id@anvil.rcac.purdue.edu:/path/to/the/density.cube /path/to/your/local/machine 
+     ```
+      or
+      ```bash
+   rsync x-your_id@anvil.rcac.purdue.edu:/path/to/the/density.cube /path/to/your/local/machine 
      ```
    f. Use VESTA to visualize the delta electron distribution of adsorption by subtracting the volumetric data of adsorbate, MXene, and termination from the total system. Set the isosurface value to 0.003, and keep the positive delta charge region color yellow, and negative delta charge region blue. 
      <img width="968" src="docs/one.png">
@@ -163,11 +157,12 @@ Individual Task
      <img width="968" src="docs/four.png">
      <img width="968" src="docs/five.png">
 
-6. Put all you work into a 10 minute presentation powerpoint. We will expect to have individual presentation on 11/25 for everyone.
+7. Put all you work into a 10 minute presentation powerpoint. We will expect to have individual presentation on -- for everyone.
 
 <a name='final'></a>
 Group Task
 
-1. Run the same calculations and measurements for Cl-terminated MXenes.
-2. Provide a simple linear regression plot using one of the factors you have measured. I would recommend using adsorption energy as y-axis and try to fit around different parameters such as number of carbons, fermi level, gain/loss of electron density, etc. as x-axis to see if you can find a trend.
-3. Do literature research on the catalytic reactions that has been done in similar settings(I would suggest look for organometallic compounds papers that has similar structure) to formulate a possible catalytic reaction pathway. Do not consider kinetical barriers such as activation energy or temperature profile, but just the thermodynamical feasibility of the reaction. Group project needs to be presented on classtime in ppt format in 12/8. All the files and data needs to be submitted by 12/12. 
+1. Combine your dataset into the format provided by the TA. It will require a pathway to : ACF.dat file of your main system, dos.dos file of your main/initial system, scf.out file of your main/initial/adsorbate system. 
+2. Setting your dataset as the test dataset, run SISSO model that was provided by the TA and evaluate the prediction accuracy.
+3. Include the dataset you have generated as training data and rerun the SISSO model with rung 1 and evaluate the prediction accuracy. Also analyze the generated parameters, and what has changed from the parameters generated from the previous model.
+4. Do literature research on the different neural network that can be trained using the given dataset. Evaluate the results and analyze why the result was either better or worse than SISSO. Group project needs to be presented on classtime in ppt format in -. All the files and data needs to be submitted by -. 
