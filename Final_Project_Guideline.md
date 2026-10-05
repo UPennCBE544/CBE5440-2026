@@ -1,8 +1,3 @@
----
-layout: page
-mathjax: true
-permalink: /Project/
----
 ## Course Project Logistics ##
 
 1. [Introduction](#intro)
