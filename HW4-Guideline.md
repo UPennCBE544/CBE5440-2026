@@ -29,7 +29,7 @@ source .bashrc
 And to use sq as a command for checking on your jobs, please change the alias set up for sq in .bashrc using the text editor(vim, nano, etc.)
 ```bash
 wget https://upenncbe544.github.io/CBE544-2025/hw5.tar.gz
-tar -xzvf hw5.tar.gz
+tar -xzvf hw4.tar.gz
 cd hw5
 ```
 
