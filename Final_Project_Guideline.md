@@ -73,10 +73,10 @@ We will break into groups of 3-4 students and each group will be assigned a seri
 | 4 | Mo, Hf, Ta, W | SO<sub>3</sub>, SO<sub>2</sub>, HCN, CO<sub>2</sub>, CO, H<sub>2</sub>S |
 
        Groups: 
-         (1) -
-         (2) -
-         (3) -
-         (4) -
+         (1) Rishith, Sarah, Gautam, Sean, Yuzhe
+         (2) Rushabh, Hongzhang, Da-Wei, Reitesh, Juneyoung
+         (3) Tiancheng, Chloe, Paige, Lintao, Thomas
+         (4) Yinjie, Suoao, Andrew, Amelia
 
 Individual Task
 1. Download the packages containing the adsorbates and necessary base structure(Relaxed Nb<sub>2</sub>C MXene, and Nb<sub>2</sub>CCl MXene)/files.
