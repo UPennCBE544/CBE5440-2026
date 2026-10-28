@@ -65,17 +65,12 @@ For the overall process, we need to go through the following path.
 
 We will break into groups of 3-4 students and each group will be assigned a series of MXenes and functional groups.
    
-       a. Functional group : H<sub>3</sub>, PO<sub>4</sub>, PH<sub>3</sub>, HCHO, NO, NO<sub>2</sub>, N<sub>2</sub>O
-          Metal : Ti, V, Zr, Nb - Group1
-
-       b. Functional group : H<sub>3</sub>PO<sub>4</sub>, PH<sub>3</sub>, HCHO, NO, NO<sub>2</sub>, N<sub>2</sub>O
-          Metal : Mo, Hf, Ta, W - Group2
-
-       c. Functional group : SO<sub>3</sub>, SO<sub>2</sub>, HCN, CO<sub>2</sub>, CO, H<sub>2</sub>S
-          Metal : Ti, V, Zr, Nb - Group3
-
-       d. Functional group : SO<sub>3</sub>, SO<sub>2</sub>, HCN, CO<sub>2</sub>, CO, H<sub>2</sub>S
-          Metal : Mo, Hf, Ta, W - Group4
+| Group | Metals | Functional groups |
+|---|---|---|
+| 1 | Ti, V, Zr, Nb | H<sub>3</sub>, PO<sub>4</sub>, PH<sub>3</sub>, HCHO, NO, NO<sub>2</sub>, N<sub>2</sub>O |
+| 2 | Mo, Hf, Ta, W | H<sub>3</sub>PO<sub>4</sub>, PH<sub>3</sub>, HCHO, NO, NO<sub>2</sub>, N<sub>2</sub>O |
+| 3 | Ti, V, Zr, Nb | SO<sub>3</sub>, SO<sub>2</sub>, HCN, CO<sub>2</sub>, CO, H<sub>2</sub>S |
+| 4 | Mo, Hf, Ta, W | SO<sub>3</sub>, SO<sub>2</sub>, HCN, CO<sub>2</sub>, CO, H<sub>2</sub>S |
 
        Groups: 
          (1) -
