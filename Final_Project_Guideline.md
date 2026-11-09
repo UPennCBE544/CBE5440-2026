@@ -67,7 +67,7 @@ We will break into groups of 3-4 students and each group will be assigned a seri
    
 | Group | Metals | Functional groups |
 |---|---|---|
-| 1 | Ti, V, Zr, Nb | H<sub>3</sub>, PO<sub>4</sub>, PH<sub>3</sub>, HCHO, NO, NO<sub>2</sub>, N<sub>2</sub>O |
+| 1 | Ti, V, Zr, Nb | H<sub>3</sub>PO<sub>4</sub>, PH<sub>3</sub>, HCHO, NO, NO<sub>2</sub>, N<sub>2</sub>O |
 | 2 | Mo, Hf, Ta, W | H<sub>3</sub>PO<sub>4</sub>, PH<sub>3</sub>, HCHO, NO, NO<sub>2</sub>, N<sub>2</sub>O |
 | 3 | Ti, V, Zr, Nb | SO<sub>3</sub>, SO<sub>2</sub>, HCN, CO<sub>2</sub>, CO, H<sub>2</sub>S |
 | 4 | Mo, Hf, Ta, W | SO<sub>3</sub>, SO<sub>2</sub>, HCN, CO<sub>2</sub>, CO, H<sub>2</sub>S |
