@@ -79,17 +79,17 @@ We will break into groups of 3-4 students and each group will be assigned a seri
          (4) Yinjie, Suoao, Andrew, Amelia
 
 Individual Task
-1. Download the packages containing the adsorbates and necessary base structure(Relaxed Nb<sub>2</sub>C MXene, and Nb<sub>2</sub>CCl MXene)/files.
+1. Download the packages containing the codes necessary for given tasks: dos, relaxation codes are already provided from HW4.
    ```bash
     wget https://upenncbe544.github.io/CBE5440-2026/files/basic_codes.tar.gz
     tar -xzvf basic_codes.tar.gz
     ```
-   Depending on your group please download one of the following files:
+   Depending on your group, please download the following file and delete unnecessary ones:
    ```bash
     wget https://upenncbe544.github.io/CBE5440-2026/files/class_materials.tar.gz
     tar -xzvf class_materials.tar.gz
     ```
-    Distribute the ligands among team members, each member should have - ligands and - metals.
+    Distribute the ligands/metals among team members, each member should have 8-9 systems of ligands+metals.
    
 3. Adsorb the functional group and relax the structure.
     a. Adsorb the first ligands straight and tilted using the given script, adsorbate.py. Please keep how you adsorb the adsorbate consistent.
