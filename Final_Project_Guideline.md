@@ -86,11 +86,8 @@ Individual Task
     ```
    Depending on your group please download one of the following files:
    ```bash
-    wget https://upenncbe544.github.io/files/CBE544-2026/Group1.tar.gz
-    wget https://upenncbe544.github.io/files/CBE544-2026/Group2.tar.gz
-    wget https://upenncbe544.github.io/files/CBE544-2026/Group3.tar.gz
-    wget https://upenncbe544.github.io/files/CBE544-2026/Group4.tar.gz
-    tar -xzvf (filename).tar.gz
+    wget https://upenncbe544.github.io/CBE5440-2026/files/class_materials.tar.gz
+    tar -xzvf class_materials.tar.gz
     ```
     Distribute the ligands among team members, each member should have - ligands and - metals.
    
