@@ -81,7 +81,7 @@ We will break into groups of 3-4 students and each group will be assigned a seri
 Individual Task
 1. Download the packages containing the adsorbates and necessary base structure(Relaxed Nb<sub>2</sub>C MXene, and Nb<sub>2</sub>CCl MXene)/files.
    ```bash
-    wget https://upenncbe544.github.io/CBE544-2025/basic_codes.tar.gz
+    wget https://upenncbe544.github.io/CBE5440-2026/files/basic_codes.tar.gz
     tar -xzvf basic_codes.tar.gz
     ```
    Depending on your group please download one of the following files:
