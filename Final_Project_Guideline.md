@@ -92,7 +92,7 @@ Individual Task
     Distribute the ligands/metals among team members, each member should have 8-9 systems of ligands+metals.
    
 3. Adsorb the functional group and relax the structure.
-    a. Adsorb the first ligands straight and tilted using the given script, adsorbate.py. Please keep how you adsorb the adsorbate consistent.
+    a. Adsorb the ligands in fcc position using the given script, adsorbate.py. Please keep how you adsorb the adsorbate consistent.
     Ex)
     <img width="968" src="docs/ref-image.png">
       How to Adsorb the functional group 
