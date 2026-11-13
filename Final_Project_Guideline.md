@@ -103,7 +103,7 @@ Individual Task
       Choose the index of the atoms in the functional group so that you get a straight chain. Then you need to choose the index atoms from the scf.out file of the bare system to designated sites. For fcc site, you need to pick a metal atom from the bottom layer, and 2 adjacent metal atoms in the same layer. 
    b. Calculate the adsorption energies of each configuration to see how stable the functional group is.
 
-4. Run a DOS calculation on the relaxed structures, same as you did for homework 5.
+4. Run a DOS calculation on the relaxed structures, same as you did for homework 4.
       
       
 5. Run Bader Charge calculation.
