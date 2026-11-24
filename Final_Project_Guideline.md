@@ -169,6 +169,6 @@ Group Task
   ```bash
     /anvil/projects/x-eve210010/CBE5440-2026/sisso
     ```
-Change the parameters in the sisso.json and submit is with sisso.sub.
+Change the pathway in the sisso.json to point to your dataset and submit it with sisso.sub.
 6. Prepare a 15 minute presentation for presentation and write a report based on your results.
 
