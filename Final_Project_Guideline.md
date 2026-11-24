@@ -148,8 +148,27 @@ Individual Task
 
 <a name='final'></a>
 Group Task
+1. For all the metal-termination files(ex), Nb-F term, Hf-F term, etc.), run scf calculation(do not use relax calculation!) on them and then run dos/pdos(projected density of states)/bader charge calculations. Do not run them on adsorbed systems or your adsorbates. Use the scripts given here.  
+    ```bash
+    /anvil/projects/x-eve210010/CBE5440-2026/pdos/everything.sub
+    ```
+2. Combine your dataset into the format provided in the GitHub. Required scripts will be given here, along with the exemplary csv file:
+   ```bash
+    wget https://upenncbe544.github.io/CBE5440-2026/files/feature.tar.gz
+    wget https://upenncbe544.github.io/CBE5440-2026/files/lasso.tar.gz
+    wget https://upenncbe544.github.io/CBE5440-2026/files/example_csv.tar.gz
+    wget https://upenncbe544.github.io/CBE5440-2026/files/old-model.tar.gz
+    ```
+   example_csv.tar.gz will contain format you need in order to extract the features for SISSO and LASSO.
+3. Setting your dataset as the test dataset, run LASSSO model and evaluate the prediction accuracy.
+4. Next, use a given SISSO model with the pre-trained dataset to predict the results of your systems. Use the command:
+   ```bash
+    python -u predict.py models/train_dim_5_model_0.dat nameofyourdatest.csv -o prediction.csv
+    ```
+5. Include the dataset you have generated as training data and rerun the SISSO model with rung 1 and evaluate the prediction accuracy. Also analyze the generated parameters, and what has changed from the parameters generated from the  previous model. You can find the needed scripts in:
+  ```bash
+    /anvil/projects/x-eve210010/CBE5440-2026/sisso
+    ```
+Change the parameters in the sisso.json and submit is with sisso.sub.
+6. Prepare a 15 minute presentation for presentation and write a report based on your results.
 
-1. Combine your dataset into the format provided by the TA. It will require a pathway to : ACF.dat file of your main system, dos.dos file of your main/initial system, scf.out file of your main/initial/adsorbate system. 
-2. Setting your dataset as the test dataset, run SISSO model that was provided by the TA and evaluate the prediction accuracy.
-3. Include the dataset you have generated as training data and rerun the SISSO model with rung 1 and evaluate the prediction accuracy. Also analyze the generated parameters, and what has changed from the parameters generated from the previous model.
-4. Do literature research on the different neural network that can be trained using the given dataset. Evaluate the results and analyze why the result was either better or worse than SISSO. Group project needs to be presented on classtime in ppt format in -. All the files and data needs to be submitted by -. 
