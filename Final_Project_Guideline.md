@@ -166,9 +166,10 @@ Group Task
     python -u predict.py models/train_dim_5_model_0.dat nameofyourdatest.csv -o prediction.csv
     ```
 5. Include the dataset you have generated as training data and rerun the SISSO model with rung 1 and evaluate the prediction accuracy. Also analyze the generated parameters, and what has changed from the parameters generated from the  previous model. You can find the needed scripts in:
-  ```bash
+    ```bash
     /anvil/projects/x-eve210010/CBE5440-2026/sisso
     ```
 Change the pathway in the sisso.json to point to your dataset and submit it with sisso.sub.
+
 6. Prepare a 15 minute presentation for presentation and write a report based on your results.
 
